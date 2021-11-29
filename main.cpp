@@ -1,14 +1,10 @@
 #include <QApplication>
-#include <QDialog>
-#include <QLabel>
+#include "cmainwidget.h"
 
 int main(int argc,char* argv[]) {
 	QApplication a(argc,argv);
-	QDialog w;
-	w.resize(400,200);
+    CMainWidget w;
 
-	QLabel label(&w);
-	label.setText(QObject::tr("Hello World!!!"));
-	w.show();
+    w.show();
 	return a.exec();
 }
